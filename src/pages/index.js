@@ -4,7 +4,6 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { BsSearch } from "react-icons/bs";
 import Weather from "../components/Weather";
-import Spinner from "../components/Spinner";
 
 export default function Home() {
   const [weather, setWeather] = useState({});
@@ -54,7 +53,7 @@ export default function Home() {
         </form>
       </div>
       {/* Weather */}
-      {weather.main && <Weather data={weather} />}
+      <Weather data={weather} />
     </div>
   );
 }
