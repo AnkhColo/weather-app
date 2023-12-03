@@ -12,7 +12,7 @@ module.exports = {
       },
       {
         hostname: "openweathermap.org",
-        protocol: "http",
+        protocol: "https",
       },
     ],
   },
